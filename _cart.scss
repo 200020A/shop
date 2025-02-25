@@ -1,0 +1,246 @@
+@keyframes order {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.top-cart {
+    height: 400px;
+    background-image: url(img/topcart.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading-big {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 127px;
+    color: #FFFFFF;
+    animation: catalog 2s ease 0s 1 normal forwards;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+
+        & p:last-child {
+            margin-right: 29px;
+        }
+    }
+
+    &__img {
+        width: 173px;
+        height: 173px;
+    }
+
+    &__name {
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__text {
+        color: #888;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 276px;
+        height: 50px;
+    }
+
+    &__price {
+        color: #050505;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__link-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 210%;
+        text-decoration-line: underline;
+        transition: 0.3s;
+
+        &:hover {
+            color: #eaa1ed;
+        }
+    }
+
+    &__item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__info {
+        width: 276px;
+    }
+
+    &__number {
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        background: #F7F6F6;
+        outline: none;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-left: 4px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+    &__button-box {
+        display: flex;
+        gap: 7px;
+        margin-top: 18px;
+    }
+
+    &__button {
+        width: 200px;
+        height: 37px;
+        display: block;
+        color: #020202;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid #000;
+
+        &:hover {
+            background: #eaa1ed;
+            color: #FFFFFF;
+        }
+
+        &_form {
+            align-self: center;
+            box-sizing: border-box;
+            margin-top: -22px;
+            width: 290px;
+            animation: order 5s ease 0s 2 normal forwards;
+
+            &:hover {
+                background: #f7adcc;
+                color: #000;
+            }
+        }
+    }
+
+    &__form {
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 520px;
+        grid-column: span 4;
+    }
+
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.form {
+    padding-top: 42px;
+    padding-left: 27px;
+    padding-right: 32px;
+
+    &__box {
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    &__heading {
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
+    &__item {
+        outline: none;
+        padding-bottom: 4px;
+        background: transparent;
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        border-bottom: 1px solid #CACDD8;
+        width: 288px;
+
+        &::placeholder {
+            color: black;
+        }
+    }
+
+    &__final {
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 16px;
+
+        &-normal {
+            font-weight: 400;
+        }
+    }
+}
